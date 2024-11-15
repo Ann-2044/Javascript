@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>light bulb switch</title>
+			<style>
+				body{
+					font-family:sans-serif;
+					display:flex;
+					flex-direction column;
+					justify-content:center;
+					align-items:center;
+					}
+				button{
+					padding:10px 20px;
+					font-size:16px;
+					margin:10px;
+					}
+					img{
+					width:200px;
+					margin:20px;
+					}
+			</style>
+	</head>
+	<body>
+	<img id="light bulb" src="/home/web/Pictures/bulboff.png"" alt="light bulb">
+	<div>
+	<button id='turnon'>Turn On</button>
+	<button id='turnoff'>Turn Off</button>
+	</div>
+	<script>
+	const lightbulb=document.getElementById('light bulb');
+	function turnon(){
+	lightbulb.src="/home/web/Pictures/bulbon.png"
+	}
+	function turnoff(){
+	lightbulb.src="/home/web/Pictures/bulboff.png"
+	}
+	document.getElementById('turnon').addEventListener('click',turnon);
+	document.getElementById('turnoff').addEventListener('click',turnoff);
+	</script>
+	</body>
+</html>

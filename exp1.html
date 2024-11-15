@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>b</title>
+			<style>
+				body{
+					font-family:sans-serif;
+					display:flex;
+					justify-content:center;
+					align-items:center;
+					}
+				button{
+					padding:10px 20px;
+					font-size:16px;
+					}
+			</style>
+	</head>
+	<body>
+	<button id='changecolor'>Change Background Color</button>
+	<script>
+	const button=document.getElementById('changecolor');
+	button.addEventListener('click',()=>{document.body.style.backgroundColor='red';});
+	button.addEventListener('dblclick',()=>{document.body.style.backgroundColor='green';});
+	</script>
+	</body>
+</html>
